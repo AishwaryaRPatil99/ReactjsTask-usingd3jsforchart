@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  color: black;
+  overflow: hidden;
+  transition: 0.5s;
+  width: 100%;
+  max-width: 10%;
+  height: 100vh;
+  padding: 80px 0px 20px 20px;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 4px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.logo img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.bars {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: 0.3s;
+  background-color: transparent;
+}
+
+.link:hover {
+  background-color: greenyellow;
+}
+
+.link .icon {
+  margin-right: 10px;
+}
+
+.link_text {
+  display: none;
+}
+
+.link.active .link_text {
+  display: block;
+}
+
+.main {
+  width: 100%;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.top-bar .MuiAppBar-root {
+  background-color: white !important;
+  color: black !important;
+}
+.top-bar {
+  background-color: white !important;
+  color: black !important;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 20px 0px -10px -90px;
+  width: 500px;
+  height: 250px;
+  display: inline-block;
+  box-shadow: 0px 4px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+}
+
+.container-graph {
+  margin-top: 80px;
+}
+.chart-container {
+  margin-bottom: 16px;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdowns {
+  display: flex;
+  align-items: center;
+}
+
+.card-body {
+  text-align: center;
+  padding: 30px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  border: none;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.checkbox-container {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.checkbox-container input {
+  display: none;
+}
+
+.checkbox-container .checkmark-in,
+.checkbox-container .checkmark-out {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background-color: yellowgreen;
+  border-radius: 2px;
+  border: 1px solid yellowgreen;
+}
+
+.checkbox-container input:checked + .checkmark-in {
+  background-color: darkolivegreen;
+  border: 1px solid darkolivegreen;
+}
+.checkbox-container input:checked + .checkmark-out {
+  background-color: rgb(60, 231, 60);
+  border: 1px solid rgb(60, 231, 60);
+}
+button {
+  padding: 3px;
+  margin: 1px;
+  background-color: rgb(190, 209, 209);
+  border: 1px solid rgb(190, 209, 209);
+  border-radius: 3px;
+  color: rgb(47, 121, 47);
+}
+select {
+  padding: 3px;
+  margin: 1px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
